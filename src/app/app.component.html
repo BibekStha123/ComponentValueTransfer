@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+</head>
+
+<body>
+  <h2>this is angular</h2>
+  <div *ngIf="showForm; then list; else add">
+    
+  </div>
+  <ng-template #list>
+      <h3>list</h3>
+    </ng-template>
+    <ng-template #add>
+      <h3>add</h3>
+    </ng-template>
+</body>
+
+</html>
+<app-child [message]="'this is child'"
+ (showMessage)="getMessage($event)">this is from child component</app-child>
